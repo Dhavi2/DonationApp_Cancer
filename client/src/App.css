@@ -1,0 +1,138 @@
+/* Full Background Image Section */
+.bg-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Image */
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%); /* dark overlay look */
+}
+
+/* Contact Section Box */
+.contact-section {
+  position: absolute;
+   background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 400px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Heading */
+.contact-section h2 {
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Subtext */
+.contact-section p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* Form Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Button */
+.contact-form button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  background: #e63946;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #d62828;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: white;
+  font-size: 14px;
+}
+
+/*.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%); /* dark overlay look */
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-section p {
+    font-size: 14px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-section {
+    padding: 15px;
+    
+  }
+
+  .contact-section h2 {
+    font-size: 20px;
+  }
+
+  .contact-section p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px){
+  .bg-image{
+      display:none;
+      background-color:rgb(199, 36, 63);
+  }
+}
